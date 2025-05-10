@@ -1,16 +1,98 @@
 ---
+import '../global.css';
+import Linkedin from '../icons/linkedin.svg';
+import Github from '../icons/github.svg';
+import Mail from '../icons/mail.svg';
 
+const title = 'Muhtasim Fuad - Full Stack Developer';
+const description =
+  'Full-stack developer with 3+ years of experience in Django, React, and PostgreSQL. Specializing in scalable web applications and business process automation.';
+const canonicalURL = 'https://fuadnafiz98.com';
 ---
 
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Muhtasim Fuad</title>
-	</head>
-	<body>
-		<h1>Muhtasim Fuad</h1>
-	</body>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <link rel="sitemap" href="/sitemap-index.xml" />
+
+    <!-- Primary Meta Tags -->
+    <title>{title}</title>
+    <meta name="title" content={title} />
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonicalURL} />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonicalURL} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={`${canonicalURL}/og-image.jpg`} />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content={canonicalURL} />
+    <meta property="twitter:title" content={title} />
+    <meta property="twitter:description" content={description} />
+    <meta property="twitter:image" content={`${canonicalURL}/og-image.jpg`} />
+
+    <!-- Additional Meta Tags -->
+    <meta
+      name="keywords"
+      content="full stack developer, django developer, react developer, postgresql, web development, software engineer, backend developer, frontend developer"
+    />
+    <meta name="author" content="Muhtasim Fuad" />
+    <meta name="robots" content="index, follow" />
+    <meta name="language" content="English" />
+    <meta name="revisit-after" content="7 days" />
+    <meta name="theme-color" content="#171717" />
+  </head>
+  <body class="bg-neutral-950 font-sans w-full h-full text-lg font-medium">
+    <main class="max-w-[650px] md:mx-auto mt-16 md:mt-32 mx-8">
+      <div class="flex items-center justify-between">
+        <h1 class="text-xl font-bold text-neutral-200">Muhtasim Fuad</h1>
+        <div class="flex space-x-3 items-center">
+          <a
+            href="https://linkedin.com/in/fuadnafiz98"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="LinkedIn Profile"
+          >
+            <div class="h-5 w-5 md:h-6 md:w-6 flex items-center justify-center">
+              <Linkedin />
+            </div>
+          </a>
+          <a
+            href="https://linkedin.com/in/fuadnafiz98"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Email"
+          >
+            <div class="h-5 w-5 md:h-6 md:w-6 flex items-center justify-center">
+              <Mail />
+            </div>
+          </a>
+          <a
+            href="https://github.com/fuadnafiz98"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="GitHub Profile"
+          >
+            <div class="h-5 w-5 md:h-6 md:w-6 flex items-center justify-center">
+              <Github />
+            </div>
+          </a>
+        </div>
+      </div>
+      <section class="text-neutral-400/90 font-normal mt-8 space-y-4 text-sm text-justify">
+        Hello! I am a full-stack developer with 3+ years of experience in scalable web applications.
+        <br /> I specialize in Django and PostgreSQL for backend development and React for responsive
+        user interfaces.
+        <br />I am passionate about solving real-life problems and creating automations to simplify
+        business processes,
+      </section>
+    </main>
+  </body>
 </html>
