@@ -3,6 +3,7 @@ import '../global.css';
 import Linkedin from '../icons/linkedin.svg';
 import Github from '../icons/github.svg';
 import Mail from '../icons/mail.svg';
+import '@fontsource-variable/ibm-plex-sans';
 
 const title = 'Muhtasim Fuad - Full Stack Developer';
 const description =
@@ -29,14 +30,12 @@ const canonicalURL = 'https://fuadnafiz98.com';
     <meta property="og:url" content={canonicalURL} />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
-    <meta property="og:image" content={`${canonicalURL}/og-image.jpg`} />
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
     <meta property="twitter:url" content={canonicalURL} />
     <meta property="twitter:title" content={title} />
     <meta property="twitter:description" content={description} />
-    <meta property="twitter:image" content={`${canonicalURL}/og-image.jpg`} />
 
     <!-- Additional Meta Tags -->
     <meta
@@ -86,7 +85,9 @@ const canonicalURL = 'https://fuadnafiz98.com';
           </a>
         </div>
       </div>
-      <section class="text-neutral-400/90 font-normal mt-8 space-y-4 text-sm text-justify">
+      <section
+        class="text-neutral-300/80 font-normal mt-8 space-y-4 text-sm md:text-base text-justify"
+      >
         Hello! I am a full-stack developer with 3+ years of experience in scalable web applications.
         <br /> I specialize in Django and PostgreSQL for backend development and React for responsive
         user interfaces.
