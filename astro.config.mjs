@@ -1,5 +1,5 @@
 // @ts-check
-import { defineConfig } from 'astro/config';
+import { defineConfig, fontProviders } from 'astro/config';
 
 import cloudflare from '@astrojs/cloudflare';
 import tailwindcss from '@tailwindcss/vite';
@@ -28,6 +28,13 @@ export default defineConfig({
 
   experimental: {
     clientPrerender: true,
+    fonts: [
+      {
+        provider: fontProviders.google(),
+        name: 'Fira Code',
+        cssVariable: '--font-fira-code',
+      },
+    ],
   },
 
   integrations: [sitemap()],
