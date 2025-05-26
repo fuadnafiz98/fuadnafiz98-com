@@ -31,8 +31,8 @@ export default defineConfig({
     fonts: [
       {
         provider: fontProviders.google(),
-        name: 'Fira Code',
-        cssVariable: '--font-fira-code',
+        name: 'Vollkorn',
+        cssVariable: '--font-vollkorn',
       },
     ],
   },
