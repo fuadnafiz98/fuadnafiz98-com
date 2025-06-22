@@ -31,8 +31,8 @@ export default defineConfig({
     fonts: [
       {
         provider: fontProviders.google(),
-        name: 'Vollkorn',
-        cssVariable: '--font-vollkorn',
+        name: 'Monda',
+        cssVariable: '--font-monda',
       },
     ],
   },
