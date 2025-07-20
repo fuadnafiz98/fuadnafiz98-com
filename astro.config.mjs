@@ -31,7 +31,7 @@ export default defineConfig({
     fonts: [
       {
         provider: fontProviders.google(),
-        name: 'Monda',
+        name: 'Cairo',
         cssVariable: '--font-monda',
       },
     ],
