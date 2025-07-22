@@ -31,7 +31,7 @@ export default defineConfig({
     fonts: [
       {
         provider: fontProviders.google(),
-        name: 'Cairo',
+        name: 'IBM Plex Mono',
         cssVariable: '--font-monda',
       },
     ],
