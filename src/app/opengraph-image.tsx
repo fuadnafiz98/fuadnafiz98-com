@@ -75,21 +75,6 @@ export default async function Image() {
         >
           Full Stack Software Engineer
         </div>
-
-        {/* Decorative elements */}
-        <div
-          style={{
-            position: 'absolute',
-            bottom: '32px',
-            fontSize: '18px',
-            color: '#71717a',
-            fontFamily: 'Geist Mono',
-            textRendering: 'geometricPrecision',
-            WebkitFontSmoothing: 'antialiased',
-          }}
-        >
-          fuadnafiz98.com
-        </div>
       </div>
     ),
     {
