@@ -68,7 +68,7 @@ export const metadata: Metadata = {
     siteName: 'Muhtasim Fuad',
     images: [
       {
-        url: '/og-image.jpg',
+        url: '/opengraph-image',
         width: 1200,
         height: 630,
         alt: 'Muhtasim Fuad - Full Stack Software Engineer',
@@ -82,7 +82,7 @@ export const metadata: Metadata = {
       'Full-stack developer with 3+ years of experience in Django, Python, React, Typescript, PostgreSQL and Containarization.',
     site: '@fuadnafiz98',
     creator: '@fuadnafiz98',
-    images: ['/og-image.jpg'],
+    images: ['/opengraph-image'],
   },
   verification: {
     google: 'your-google-verification-code',
