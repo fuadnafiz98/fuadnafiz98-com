@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { Geist, Geist_Mono } from 'next/font/google';
+import { generatePersonSchema } from '@/lib/jsonld';
 import './globals.css';
 import { ThemeProvider } from 'next-themes';
 import { Header } from './header';
@@ -123,7 +124,16 @@ export const metadata: Metadata = {
     'dc.publisher': 'Muhtasim Fuad',
     'dc.title': 'Muhtasim Fuad Portfolio',
     'dc.type': 'website',
+    'dc.language': 'en',
+    'dc.coverage': 'Global',
+    'dc.rights': '© 2025 Muhtasim Fuad',
+    google: 'notranslate', // Prevent Google from offering translations
+    'apple-mobile-web-app-capable': 'yes',
+    'apple-mobile-web-app-status-bar-style': 'black-translucent',
+    'msapplication-TileColor': '#09090b',
   },
+  assets: ['/assets/logo.jpg'],
+  classification: 'Personal Portfolio and Blog',
 };
 
 export default function RootLayout({
@@ -133,6 +143,18 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+        {/* Add JSON-LD to your page */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(generatePersonSchema()).replace(
+              /</g,
+              '\\u003c',
+            ),
+          }}
+        />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} font-geist bg-white tracking-tight antialiased dark:bg-zinc-950`}
       >
