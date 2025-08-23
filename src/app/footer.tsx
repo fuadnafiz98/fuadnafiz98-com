@@ -45,7 +45,7 @@ function ThemeSwitch() {
         duration: 0.2,
       }}
       enableHover={false}
-      onValueChange={(id: string) => {
+      onValueChange={(id: string | null) => {
         setTheme(id as string);
       }}
     >
