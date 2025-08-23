@@ -1,0 +1,12 @@
+/* TEAM */
+Developer: Muhtasim Fuad
+Site: https://fuadnafiz98.com
+Twitter: @fuadnafiz98
+Github: @fuadnafiz98
+Location: Bangladesh
+
+/* SITE */
+Last update: 2025/08/24
+Standards: HTML5, CSS3, TypeScript
+Components: Next.js, React, TailwindCSS
+Software: VS Code, Git

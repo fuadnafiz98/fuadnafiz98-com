@@ -45,11 +45,15 @@ export function generatePersonSchema(): JsonLd {
     hasOccupation: {
       '@type': 'Occupation',
       name: 'Full Stack Developer',
-      occupationLocation: {
+      jobLocation: {
         '@type': 'Place',
         address: {
           '@type': 'PostalAddress',
-          addressCountry: 'Bangladesh',
+          addressCountry: {
+            '@type': 'Country',
+            name: 'Bangladesh',
+          },
+          addressRegion: 'Dhaka',
         },
       },
       description: [
