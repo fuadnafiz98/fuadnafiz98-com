@@ -35,7 +35,7 @@ export function generatePersonSchema(): JsonLd {
       '@type': 'Organization',
       name: 'Military Institute of Science and Technology (MIST)',
     },
-    email: 'mailto:fuadnafiz98@gmail.com',
+    email: 'mailto:dev@fuadnafiz98.com',
     worksFor: {
       '@type': 'Organization',
       name: 'Greentomato Media',
