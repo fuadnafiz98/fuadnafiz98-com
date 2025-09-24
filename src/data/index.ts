@@ -27,100 +27,204 @@ type SocialLink = {
   link: string;
 };
 
+type Education = {
+  institution: string;
+  degree: string;
+  start: string;
+  end: string;
+  id: string;
+};
+
+type Skill = {
+  category: string;
+  items: string[];
+};
+
 export const PROJECTS: Project[] = [
   {
-    name: 'Motion Primitives Pro',
+    name: 'Aura Campaigns',
     description:
-      'Advanced components and templates to craft beautiful websites.',
-    link: 'https://pro.motion-primitives.com/',
-    video:
-      'https://res.cloudinary.com/read-cv/video/upload/t_v_b/v1/1/profileItems/W2azTw5BVbMXfj7F53G92hMVIn32/newProfileItem/d898be8a-7037-4c71-af0c-8997239b050d.mp4?_a=DATAdtAAZAA0',
+      'Realtime email campaign automation system with Convex DB and Resend.',
+    link: 'https://aura.fuadnafiz98.com',
+    video: '/videos/aura-campaigns.mp4', // Add your video here
     id: 'project1',
   },
   {
-    name: 'Motion Primitives',
-    description: 'UI kit to make beautiful, animated interfaces.',
-    link: 'https://motion-primitives.com/',
-    video:
-      'https://res.cloudinary.com/read-cv/video/upload/t_v_b/v1/1/profileItems/W2azTw5BVbMXfj7F53G92hMVIn32/XSfIvT7BUWbPRXhrbLed/ee6871c9-8400-49d2-8be9-e32675eabf7e.mp4?_a=DATAdtAAZAA0',
+    name: 'AI Crypto Agent',
+    description:
+      'AI agent that answers crypto questions using external APIs and embeddings.',
+    link: 'https://github.com/fuadnafiz98/crypto-agent',
+    video: '/videos/crypto-agent.mp4', // Add your video here
     id: 'project2',
+  },
+  {
+    name: 'Remote Code Execution System',
+    description:
+      'Safe code execution platform using Docker and Node.js child processes.',
+    link: 'https://github.com/fuadnafiz98/rcx',
+    video: '/videos/rcx.mp4', // Add your video here
+    id: 'project3',
+  },
+  {
+    name: 'Golang Chat Application',
+    description:
+      'Scalable chat app with websockets, Docker, and Redis clustering.',
+    link: 'https://github.com/fuadnafiz98/go-websockets',
+    video: '/videos/go-chat.mp4', // Add your video here
+    id: 'project4',
+  },
+  {
+    name: 'Bookaholics',
+    description:
+      'Community platform for book lovers with JWT auth and HarperDB.',
+    link: 'https://github.com/fuadnafiz98/bookaholics',
+    video: '/videos/bookaholics.mp4', // Add your video here
+    id: 'project5',
   },
 ];
 
 export const WORK_EXPERIENCE: WorkExperience[] = [
   {
-    company: 'Reglazed Studio',
-    title: 'CEO',
-    start: '2024',
+    company: 'GreenSeedDigital LLC',
+    title: 'Full Stack Developer',
+    start: 'Mar 2022',
     end: 'Present',
-    link: 'https://ibelick.com',
+    link: 'https://github.com/fuadnafiz98',
     id: 'work1',
-  },
-  {
-    company: 'Freelance',
-    title: 'Design Engineer',
-    start: '2022',
-    end: '2024',
-    link: 'https://ibelick.com',
-    id: 'work2',
-  },
-  {
-    company: 'Freelance',
-    title: 'Front-end Developer',
-    start: '2017',
-    end: 'Present',
-    link: 'https://ibelick.com',
-    id: 'work3',
   },
 ];
 
 export const BLOG_POSTS: BlogPost[] = [
   {
-    title: 'Exploring the Intersection of Design, AI, and Design Engineering',
-    description: 'How AI is changing the way we design',
-    link: '/blog/exploring-the-intersection-of-design-ai-and-design-engineering',
+    title: 'Building Scalable Web Applications with Django and React',
+    description: 'My experience building high-throughput applications at scale',
+    link: '/blog/django-react-scalability',
     uid: 'blog-1',
   },
   {
-    title: 'Why I left my job to start my own company',
+    title: 'AI Content Generation: Lessons from Production',
     description:
-      'A deep dive into my decision to leave my job and start my own company',
-    link: '/blog/exploring-the-intersection-of-design-ai-and-design-engineering',
+      'How we built a distributed AI platform generating hundreds of content pieces',
+    link: '/blog/ai-content-generation',
     uid: 'blog-2',
   },
   {
-    title: 'What I learned from my first year of freelancing',
+    title: 'Kubernetes in Practice: CI/CD at Scale',
     description:
-      'A look back at my first year of freelancing and what I learned',
-    link: '/blog/exploring-the-intersection-of-design-ai-and-design-engineering',
+      'Optimizing build pipelines and managing K8s clusters for developer productivity',
+    link: '/blog/kubernetes-cicd-scale',
     uid: 'blog-3',
   },
   {
-    title: 'How to Export Metadata from MDX for Next.js SEO',
+    title: 'From JavaScript to TypeScript: Migration Best Practices',
     description:
-      'A guide on exporting metadata from MDX files to leverage Next.js SEO features.',
-    link: '/blog/example-mdx-metadata',
+      'How we migrated a legacy React project and improved build times by 60%',
+    link: '/blog/js-to-ts-migration',
     uid: 'blog-4',
   },
 ];
 
 export const SOCIAL_LINKS: SocialLink[] = [
   {
-    label: 'Github',
-    link: 'https://github.com/ibelick',
-  },
-  {
-    label: 'Twitter',
-    link: 'https://twitter.com/ibelick',
+    label: 'GitHub',
+    link: 'https://github.com/fuadnafiz98',
   },
   {
     label: 'LinkedIn',
-    link: 'https://www.linkedin.com/in/ibelick',
+    link: 'https://linkedin.com/in/fuadnafiz98',
   },
   {
-    label: 'Instagram',
-    link: 'https://www.instagram.com/ibelick',
+    label: 'HackerRank',
+    link: 'https://www.hackerrank.com/fuadnafiz98',
   },
 ];
 
-export const EMAIL = 'your@email.com';
+export const EMAIL = 'fuadnafiz98@gmail.com';
+
+export const EDUCATION: Education[] = [
+  {
+    institution: 'Military Institute of Science & Technology',
+    degree: 'B.Sc in Computer Science & Engineering',
+    start: 'Feb 2018',
+    end: 'Mar 2022',
+    id: 'edu1',
+  },
+];
+
+export const SKILLS: Skill[] = [
+  {
+    category: 'AI',
+    items: [
+      'Ango-AGI',
+      'AI Agents',
+      'MCP Servers',
+      'LLamaIndex',
+      'RAG Pipelines',
+    ],
+  },
+  {
+    category: 'Languages',
+    items: [
+      'Python',
+      'Golang',
+      'JavaScript',
+      'TypeScript',
+      'Node.js',
+      'C++',
+      'C',
+      'HTML/CSS',
+    ],
+  },
+  {
+    category: 'Frameworks',
+    items: [
+      'Django',
+      'Django Rest Framework',
+      'Next.js',
+      'Nest.js',
+      'Gin',
+      'React.js',
+      'Node.js',
+      'Tailwind CSS',
+      'Express.js',
+    ],
+  },
+  {
+    category: 'Google Cloud Platform',
+    items: [
+      'Pub-Sub',
+      'Secrets Manager',
+      'Cloud Functions',
+      'BigQuery',
+      'Looker Studio',
+    ],
+  },
+  {
+    category: 'Testing',
+    items: ['Cypress.io', 'Pytest', 'Selenium'],
+  },
+  {
+    category: 'DevOps',
+    items: [
+      'Bash Scripting',
+      'Docker',
+      'GitLab CI/CD',
+      'GitHub Actions',
+      'Grafana',
+      'Prometheus',
+      'Kubernetes',
+    ],
+  },
+  {
+    category: 'Others',
+    items: ['Cloudflare Workers', 'KV', 'PostgreSQL', 'AWS SQS', 'Git'],
+  },
+];
+
+export const ACHIEVEMENTS = [
+  'IELTS Band 7.5 (Listening: 8.5, Reading: 7.5, Writing: 7.0, Speaking: 7.0)',
+  'Best Junior Team at Inter MIST Programming Contest 2020',
+  'Champions at ICT-Innovation Fest App Contest and Hackathon 2021',
+  '5 Star Problem Solving at HackerRank',
+  '400+ Problems solved across various coding platforms',
+];
